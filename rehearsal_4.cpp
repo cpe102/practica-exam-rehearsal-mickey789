@@ -1,6 +1,19 @@
 #include <iostream>
+#include<string>
+using namespace std;
 
 //Write compress() here.
+string conpress(string x){
+    int l = x.size();
+    int i = 0;
+    string sum = "";
+    while(i<l){
+        sum = sum + x[i];
+        i += 3;
+    }
+    return sum;
+}
+
 
 int main()
 {
